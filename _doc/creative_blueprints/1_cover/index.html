@@ -1,0 +1,37 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-portrait .sl-visual { width: 100%; height: 36%; }
+  .mode-portrait .sl-content { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout w-full h-full flex p-10 gap-8">
+
+    <!-- Left: headline + tagline + attribution -->
+    <div class="sl-content flex flex-col justify-between flex-1 py-2">
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-rose-400 mb-8">
+          A Personal Message
+        </p>
+        <h1 class="text-7xl font-extrabold leading-none text-slate-900 mb-6">
+          Hello,<br/>
+          <span class="text-rose-500">Veronica.</span>
+        </h1>
+        <p class="text-lg text-slate-500 leading-relaxed max-w-xs">
+          A page made for one person — two sections, one heart, nothing in between.
+        </p>
+      </div>
+      <data-attribution />
+    </div>
+
+    <!-- Right: visual anchor -->
+    <div class="sl-visual w-5/12 rounded-3xl overflow-hidden">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=soft%20romantic%20love%20letter%20with%20a%20single%20red%20rose%20on%20a%20wooden%20table%2C%20warm%20golden%20candlelight%2C%20intimate%20editorial%20photography%2C%20cinematic%20warm%20tones"
+        class="w-full h-full object-cover"
+        alt="For Veronica"
+      />
+    </div>
+
+  </div>
+</section>

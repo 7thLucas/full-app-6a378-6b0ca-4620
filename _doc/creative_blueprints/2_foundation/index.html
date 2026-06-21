@@ -1,0 +1,47 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-portrait .sl-visual { width: 100%; height: 32%; }
+  .mode-portrait .sl-body { width: 100%; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout w-full h-full flex p-10 gap-10">
+
+    <!-- Left: narrative zones -->
+    <div class="sl-body flex-1 flex flex-col justify-center gap-8">
+
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-3">The Occasion</p>
+        <h2 class="text-3xl font-extrabold text-slate-900 leading-snug mb-3">
+          Some feelings deserve<br/>their own address.
+        </h2>
+        <p class="text-slate-500 leading-relaxed">
+          Words said in passing disappear. A message in a chat gets buried. When a feeling matters, leaving it to chance isn't good enough — it needs a place to live permanently.
+        </p>
+      </div>
+
+      <div class="w-12 h-px bg-rose-200"></div>
+
+      <div>
+        <p class="text-xs font-bold uppercase tracking-widest text-rose-400 mb-3">The Answer</p>
+        <h2 class="text-3xl font-extrabold text-rose-600 leading-snug mb-3">
+          A page built only<br/>for Veronica.
+        </h2>
+        <p class="text-slate-500 leading-relaxed">
+          Two sections. One greeting. One declaration. Direct, permanent, and unmistakably personal — she can open it any time, on any device.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: visual -->
+    <div class="sl-visual w-5/12 rounded-3xl overflow-hidden">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=handwritten%20love%20note%20on%20vintage%20paper%20with%20a%20single%20red%20rose%20beside%20it%2C%20soft%20warm%20natural%20light%2C%20close-up%20editorial%20photography%2C%20romantic%20and%20intimate"
+        class="w-full h-full object-cover"
+        alt="A note for Veronica"
+      />
+    </div>
+
+  </div>
+</section>

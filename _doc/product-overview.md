@@ -1,0 +1,1 @@
+buatin satu aplikasi sederhana yaitu landing page 2 secion aja, hello veronica, dan 1 section lagi i love you veronica
